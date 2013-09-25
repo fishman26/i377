@@ -1,0 +1,4 @@
+/bin
+/build
+/WebContent/WEB-INF
+*.class
