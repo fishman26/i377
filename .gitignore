@@ -1,4 +1,11 @@
 /bin
 /build
-/WebContent/WEB-INF
+
+#classes
 *.class
+*.jar
+*.war
+*.ear
+
+#lisada
+!/lib/*.jar
