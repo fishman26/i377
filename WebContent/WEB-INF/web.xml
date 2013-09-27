@@ -29,7 +29,7 @@
     <servlet-name>SessionCount</servlet-name>
     <url-pattern>/SessionCount</url-pattern>
   </servlet-mapping>
-  <servlet>
+    <servlet>
     <description></description>
     <display-name>LogOut</display-name>
     <servlet-name>LogOut</servlet-name>
@@ -49,4 +49,7 @@
     <servlet-name>HomePage</servlet-name>
     <url-pattern>/HomePage</url-pattern>
   </servlet-mapping>
+  <listener>
+    <listener-class>test.SessionCounterListener</listener-class>
+  </listener>
 </web-app>
