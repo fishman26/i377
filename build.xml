@@ -39,11 +39,11 @@
 
 	<target name="init">
 		<mkdir dir="${classes.dir}" />
-		<mkdir dir ="${dir.lib}" />
+		<mkdir dir="${dir.lib}" />
 	</target>
 
 	<target name="clean">
 		<delete dir="${build.dir}" />
-		<delete dir ="${dir.lib}" />
+		<delete dir="${dir.lib}" />
 	</target>
 </project>
