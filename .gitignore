@@ -1,6 +1,6 @@
 /bin
 /build
-
+/WebContent/lib
 #classes
 *.class
 *.jar
