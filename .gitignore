@@ -1,6 +1,6 @@
 /bin
 /build
-/WebContent/WEB-INF/lib
+
 
 #classes
 *.class
