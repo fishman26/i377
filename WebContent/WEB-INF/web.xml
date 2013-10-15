@@ -11,49 +11,6 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>Hello</display-name>
-    <servlet-name>Hello</servlet-name>
-    <servlet-class>test.Hello</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Hello</servlet-name>
-    <url-pattern>/Hello</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>SessionCount</display-name>
-    <servlet-name>SessionCount</servlet-name>
-    <servlet-class>test.SessionCount</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>SessionCount</servlet-name>
-    <url-pattern>/SessionCount</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>LogOut</display-name>
-    <servlet-name>LogOut</servlet-name>
-    <servlet-class>test.LogOut</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>LogOut</servlet-name>
-    <url-pattern>/LogOut</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>HomePage</display-name>
-    <servlet-name>HomePage</servlet-name>
-    <servlet-class>test.HomePage</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>HomePage</servlet-name>
-    <url-pattern>/HomePage</url-pattern>
-  </servlet-mapping>
-  <listener>
-    <listener-class>test.SessionCounterListener</listener-class>
-  </listener>
-  <servlet>
-    <description></description>
     <display-name>Add</display-name>
     <servlet-name>Add</servlet-name>
     <servlet-class>Add</servlet-class>
@@ -76,10 +33,11 @@
     <description></description>
     <display-name>SetupDao</display-name>
     <servlet-name>SetupDao</servlet-name>
-    <servlet-class>ex3.SetupDao</servlet-class>
+    <servlet-class>test.SetupDao</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>SetupDao</servlet-name>
     <url-pattern>/SetupDao</url-pattern>
   </servlet-mapping>
-</web-app>
+
+  </web-app>
