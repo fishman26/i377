@@ -19,9 +19,10 @@ public class Search extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 
 		String action = request.getParameter("do");
+		Dao dao = new Dao();
 		if ("delete".equals(action)) {
 			try {
-				new Dao().deleteRow(request.getParameter("id"));
+				dao.deleteRow(request.getParameter("id"));
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
@@ -32,7 +33,7 @@ public class Search extends HttpServlet {
 		String search = request.getParameter("searchString");
 		if (search != null) {
 			try {
-				objects = new Dao()
+				objects = dao
 						.search(request.getParameter("searchString"));
 			} catch (SQLException e) {
 				e.printStackTrace();
@@ -40,7 +41,7 @@ public class Search extends HttpServlet {
 		} else {
 
 			try {
-				objects = new Dao().findAllObjects();
+				objects = dao.findAllObjects();
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

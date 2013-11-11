@@ -9,9 +9,10 @@ public class ServletContListener implements ServletContextListener {
 
 	public void contextInitialized(ServletContextEvent arg0) {
 		try {
-			new SetupDao().createSchema("example.sql");
 			new SetupDao().createSchema("schema.sql");
-					} 
+			new SetupDao().createSchema("example.sql");
+			
+								} 
 		catch (Exception e) {
 			System.out.println(e);
 		}

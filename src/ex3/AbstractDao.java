@@ -3,6 +3,7 @@ package ex3;
 import java.sql.*;
 
 import org.apache.commons.dbutils.DbUtils;
+import org.hsqldb.jdbcDriver;
 
 public abstract class AbstractDao {
 
@@ -17,7 +18,9 @@ public abstract class AbstractDao {
         try {
             Class.forName("org.hsqldb.jdbcDriver");
         } catch (Exception e) {
+        	System.out.println("fdghj   " + e.getMessage());
             throw new RuntimeException(e);
+            
         }
     }
 

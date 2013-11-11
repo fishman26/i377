@@ -10,7 +10,8 @@
 		<dependency org="jstl" name="jstl" rev="1.2"/>
 		<dependency org="org.apache.tomcat" name="jsp-api" rev="6.0.37"/>
 		<dependency org="javax.persistence" name="persistence-api" rev="1.0.2"/>
-
+        <dependency org="hsqldb" name="hsqldb" rev="1.8.0.7"/>
+            
 		
 	</dependencies>
 </ivy-module>
